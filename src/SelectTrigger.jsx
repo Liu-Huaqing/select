@@ -179,7 +179,8 @@ const SelectTrigger = React.createClass({
     if (!search && !menuItems.length) {
       visible = false;
     }
-    return (<Trigger action={['click']}
+    return (<Trigger {...props}
+                    action={['click']}
                     ref="trigger"
                     popupPlacement="bottomLeft"
                     builtinPlacements={BUILT_IN_PLACEMENTS}
