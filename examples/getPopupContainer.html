@@ -264,12 +264,12 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   <div class="example" id="__react-content"></div>
   <script src="common.js?nowrap"></script>
   <script src="getPopupContainer.js?nowrap"></script>
-  <div class="highlight"><pre><code language="js">import React from <span class="hljs-string">'react'</span>;
-import ReactDOM from <span class="hljs-string">'react-dom'</span>;
-import Select, {Option} from <span class="hljs-string">'rc-select'</span>;
-import <span class="hljs-string">'rc-select/assets/index.css'</span>;
-import Dialog from <span class="hljs-string">'rc-dialog'</span>;
-import <span class="hljs-string">'rc-dialog/assets/index.css'</span>;
+  <div class="highlight"><pre><code language="js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
+<span class="hljs-keyword">import</span> Select, {Option} <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-select'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'rc-select/assets/index.css'</span>;
+<span class="hljs-keyword">import</span> Dialog <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-dialog'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'rc-dialog/assets/index.css'</span>;
 
 <span class="hljs-keyword">const</span> Test = React.createClass({
   getInitialState() {
@@ -315,11 +315,11 @@ import <span class="hljs-string">'rc-dialog/assets/index.css'</span>;
             <span class="hljs-tag">&lt;<span class="hljs-title">Option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">Option</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">Select</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">Dialog</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>);
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Dialog</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>)</span>;
   },
 });
 
-ReactDOM.render(<span class="hljs-tag">&lt;<span class="hljs-title">Test</span> /&gt;</span>, document.getElementById('__react-content'));
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Test</span> /&gt;</span>, document.getElementById('__react-content'));
 </span></code></pre></div>
 </div>
 <a href="http://github.com/react-component/select">

@@ -266,12 +266,12 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   <script src="optgroup.js?nowrap"></script>
   <div class="highlight"><pre><code language="js"><span class="hljs-comment">/* eslint no-console: 0 */</span>
 
-import React from <span class="hljs-string">'react'</span>;
-import Select, {Option, OptGroup} from <span class="hljs-string">'rc-select'</span>;
-import <span class="hljs-string">'rc-select/assets/index.css'</span>;
-import ReactDOM from <span class="hljs-string">'react-dom'</span>;
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> Select, {Option, OptGroup} <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-select'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'rc-select/assets/index.css'</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span><span class="hljs-params">(value)</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">value</span>) </span>{
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'selected '</span> + value);
 }
 
@@ -297,10 +297,10 @@ import ReactDOM from <span class="hljs-string">'react-dom'</span>;
       <span class="hljs-tag">&lt;/<span class="hljs-title">Select</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-);
+)</span>;
 
-ReactDOM.render(c1, document.getElementById('__react-content'));
-</span></code></pre></div>
+ReactDOM.render(c1, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'__react-content'</span>));
+</code></pre></div>
 </div>
 <a href="http://github.com/react-component/select">
   <img style="position: absolute; top: 0; right: 0; border: 0;"

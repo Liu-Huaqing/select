@@ -266,46 +266,46 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   <script src="multiple.js?nowrap"></script>
   <div class="highlight"><pre><code language="js"><span class="hljs-comment">/* eslint no-console: 0 */</span>
 
-import React from <span class="hljs-string">'react'</span>;
-import Select, {Option} from <span class="hljs-string">'rc-select'</span>;
-import <span class="hljs-string">'rc-select/assets/index.css'</span>;
-import ReactDOM from <span class="hljs-string">'react-dom'</span>;
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> Select, {Option} <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-select'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'rc-select/assets/index.css'</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 
 <span class="hljs-keyword">const</span> children = [];
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">10</span>; i &lt; <span class="hljs-number">36</span>; i++) {
-  children.push(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Option</span> <span class="hljs-attribute">key</span>=<span class="hljs-value">{i.toString(36)</span> + <span class="hljs-attribute">i</span>}&gt;</span>{i.toString(36) + i}<span class="hljs-tag">&lt;/<span class="hljs-title">Option</span>&gt;</span>);
+  children.push(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Option</span> <span class="hljs-attribute">key</span>=<span class="hljs-value">{i.toString(36)</span> + <span class="hljs-attribute">i</span>}&gt;</span>{i.toString(36) + i}<span class="hljs-tag">&lt;/<span class="hljs-title">Option</span>&gt;</span>)</span>;
 }
 
-function onChange(value) {
-  console.log('selected ' + value);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">value</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'selected '</span> + value);
 }
 
-function onSelect() {
-  console.log(arguments);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onSelect</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">arguments</span>);
 }
 
-function onDeselect() {
-  console.log(arguments);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onDeselect</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">arguments</span>);
 }
 
-const Test = React.createClass({
+<span class="hljs-keyword">const</span> Test = React.createClass({
   getInitialState() {
-    return {
-      useAnim: 0,
+    <span class="hljs-keyword">return</span> {
+      useAnim: <span class="hljs-number">0</span>,
     };
   },
   useAnim(e) {
-    this.setState({
+    <span class="hljs-keyword">this</span>.setState({
       useAnim: e.target.checked,
     });
   },
   render() {
-    const dropdownMenuStyle = {
-      maxHeight: 200,
-      overflow: 'auto',
+    <span class="hljs-keyword">const</span> dropdownMenuStyle = {
+      maxHeight: <span class="hljs-number">200</span>,
+      overflow: <span class="hljs-string">'auto'</span>,
     };
-    return (
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>multiple select（scroll the menu）<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
@@ -326,11 +326,11 @@ const Test = React.createClass({
           <span class="hljs-tag">&lt;/<span class="hljs-title">Select</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    );
+    )</span>;
   },
 });
 
-ReactDOM.render(<span class="hljs-tag">&lt;<span class="hljs-title">Test</span> /&gt;</span>, document.getElementById('__react-content'));
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Test</span> /&gt;</span>, document.getElementById('__react-content'));
 </span></code></pre></div>
 </div>
 <a href="http://github.com/react-component/select">
